@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Funnel+Display:wght@300..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding: 80px;
+    background-color: #d9d2c6;
+    color: #000000;
+    overscroll-behavior-y: none;
+}
+header{
+    position: sticky;
+    top: 0;
+
+}
+h2{
+    text-align: center;
+    color: #38bdf8;
+}
+.section {
+  padding: 100px 10%;
+  height: 100vh;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* nav */
+
+nav {
+  background: #020617;
+  padding: 18px 50px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.navbar {
+  color: #cbd5f5;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.navbar:hover {
+  color: #38bdf8;
+}
+
+#pt {
+  font-size: 22px;
+  font-weight: 700;
+  margin-right: auto;
+  color: #38bdf8;
+}
+/* home */
+
+#home {
+  height: 95vh;
+  background:
+    linear-gradient(
+      rgba(2, 6, 23, 0.8),
+      rgba(2, 6, 23, 0.9)
+    ),
+    url("https://images.pexels.com/photos/18865726/pexels-photo-18865726.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#heading {
+  font-size: 64px;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+#introduction {
+  font-size: 20px;
+  margin: 15px 0 30px;
+  color: #94a3b8;
+}
+#github {
+  background: #38bdf8;
+  color: #020617;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#github:hover {
+  background: #0ea5e9;
+}
+/* aboutme */
+
+
+#about {
+  justify-content: flex-start;
+  font-size: 40px;
+}
+
+#about p {
+  font-size: 20px;
+  line-height: 1.7;
+}
+.about-layout {
+  
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Image */
+.about-img {
+  width: 280px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Text */
+.p-leftabout,
+.p-rightabout {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+/* skills */
+.a-heading,
+#skills h2,
+#services h2,
+#portfolio h2,
+#testimonials h2,
+#contact h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+  color: #4e4034;
+}
+
+.skill {
+  margin-bottom: 22px;
+}
+
+.p-bar {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 10px;
+  background: linear-gradient(90deg, #4e4034, #8c7864);
+}
+
+.html { width: 70%; }
+.css { width: 55%; }
+.js { width: 60%; }
+.responsive { width: 65%; }
+
+/* services */
+.services {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.f-cont {
+  background: #8c7864;
+  padding: 25px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+
+/* portfolio */
+    
+.portfolio-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.portfolio-item {
+  background: #8c7864;
+  padding: 25px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* testimonaials */
+.testimonial {
+  background: #8c7864;
+  border-left: 4px solid #4e4034;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+/* contact */
+
+#contact form {
+  background: #8c7864;
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 650px;  
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #4e4034;
+  color:    #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+/* footer */
+footer {
+  background: #4e4034;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+}
+
+.social-link {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+}
